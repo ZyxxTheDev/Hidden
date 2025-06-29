@@ -8,23 +8,23 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Tommy\\.nuget\\packages\\": {},
+    "C:\\Users\\Lv1me\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tommy\\OneDrive\\Documents\\GitHub\\Hidden\\Hidden Menu\\Hidden.csproj",
+      "projectUniqueName": "C:\\Users\\Lv1me\\Music\\OGFN\\Hidden\\Hidden Menu\\Hidden.csproj",
       "projectName": "Hidden",
-      "projectPath": "C:\\Users\\Tommy\\OneDrive\\Documents\\GitHub\\Hidden\\Hidden Menu\\Hidden.csproj",
-      "packagesPath": "C:\\Users\\Tommy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tommy\\OneDrive\\Documents\\GitHub\\Hidden\\Hidden Menu\\obj\\",
+      "projectPath": "C:\\Users\\Lv1me\\Music\\OGFN\\Hidden\\Hidden Menu\\Hidden.csproj",
+      "packagesPath": "C:\\Users\\Lv1me\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lv1me\\Music\\OGFN\\Hidden\\Hidden Menu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tommy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lv1me\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "netstandard2.1": {
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

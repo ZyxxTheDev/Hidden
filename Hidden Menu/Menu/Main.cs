@@ -41,12 +41,12 @@ namespace Hidden.Menu
                     GameObject WallMonitor = GameObject.Find("Environment Objects/LocalObjects_Prefab/TreeRoom/TreeRoomBoundaryStones/BoundaryStoneSet_Forest/wallmonitorforestbg");
                     WallMonitor.GetComponent<Renderer>().material = mat;
 
-                    GameObject.Find("Environment Objects/LocalObjects_Prefab/TreeRoom/motd (1)").GetComponent<TextMeshPro>().text = $"<color={hexColor}>Hidden | V{Hidden.Initialization.PluginInfo.menuVersion}</color>\n--------------------------------------------";
+                    GameObject.Find("Environment Objects/LocalObjects_Prefab/TreeRoom/motd (1)").GetComponent<TextMeshPro>().text = $"<color={hexColor}>Inject | V{Hidden.Initialization.PluginInfo.menuVersion}</color>\n--------------------------------------------";
                     GameObject.Find("Environment Objects/LocalObjects_Prefab/TreeRoom/motd (1)").GetComponent<TextMeshPro>().color = DFade.color;
                     TextMeshPro textMeshPro = GameObject.Find("Environment Objects/LocalObjects_Prefab/TreeRoom/motdtext").GetComponent<TextMeshPro>();
                     textMeshPro.GetComponent<TextMeshPro>().color = DFade.color;
                     textMeshPro.text = $"" +
-                        $"\nThank You For Using Hidden!\n\n" +
+                        $"\nThank You For Using Inject!\n\n" +
                         $"Status: <color={hexColor}>{status}</color>\n" +
                         $"Current User: <color={hexColor}>{PhotonNetwork.LocalPlayer.NickName.ToUpper()}</color> \n" +
                         $"Current Ping: <color={hexColor}>{PhotonNetwork.GetPing().ToString().ToUpper()}</color>\n" +
@@ -157,10 +157,10 @@ namespace Hidden.Menu
             cm = GameObject.Find("Player Objects/Third Person Camera/Shoulder Camera/CM vcam1");
 
             ExitGames.Client.Photon.Hashtable table = Photon.Pun.PhotonNetwork.LocalPlayer.CustomProperties;
-            table.Add("Hidden Menu", true);
+            table.Add("Inject Menu", true);
             Photon.Pun.PhotonNetwork.LocalPlayer.SetCustomProperties(table);
 
-            //SendWeb($"**{PhotonNetwork.LocalPlayer.NickName}** has loaded into the game with **Hidden**!");
+            StartCoroutine(SendDiscordWebhook($"**{PhotonNetwork.LocalPlayer.NickName}** has loaded into the game with **Inject**!"));
         }
         private static int i = 0;
         [HarmonyPrefix]
@@ -614,10 +614,10 @@ namespace Hidden.Menu
             }
 
             tmp.text =
-                $"<color={hexColor}>Hidden Menu</color>\n" +
+                $"<color={hexColor}>Inject Menu</color>\n" +
                 $"<size=2>Status: <color={hexColor}>{status}</color>\n" +
                 $"VERSION: <color={hexColor}>{menuVersion}</color></size>\n" +
-                $"<size=1.5>Made By <color={hexColor}>Menker</color>";
+                $"<size=1.5>Made By <color={hexColor}>Zyxx</color>";
 
             StumpText.transform.position = new Vector3(-66.8087f, 12.1808f, -82.5265f);
             StumpText.transform.LookAt(Camera.main.transform);
